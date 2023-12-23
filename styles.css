@@ -1,0 +1,69 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: monospace;
+}
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(3, 3, 49, 0.9);
+}
+body.currect {
+  background-color: rgba(1, 86, 39, 0.895);
+}
+body.wrong {
+  background-color: rgba(117, 7, 7, 0.909);
+}
+.questions {
+  font-size: 2rem;
+}
+.container {
+  width: 800px;
+  max-width: 80%;
+  background-color: aliceblue;
+  border-radius: 6px;
+  padding: 10px;
+  box-shadow: 0 0 10px 1px;
+}
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 0;
+}
+.btn {
+  background-color: aqua;
+  border: 1px solid black;
+  color: rgb(3, 0, 0);
+  border-radius: 5px;
+  padding: 15px 10px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.btn:hover {
+  border-color: white;
+}
+.btn.currect {
+  background-color: rgb(33, 255, 33);
+}
+.btn.wrong {
+  background-color: red;
+}
+.start-btn,
+.next-btn {
+  font-size: 3rem;
+}
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hide {
+  display: none;
+}
